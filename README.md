@@ -14,7 +14,7 @@ uri_parser
 $ git clone https://github.com/Zewo/uri_parser.git
 $ cd uri_parser
 $ make
-$ dpkg -i http_parser.deb
+$ dpkg -i uri_parser.deb
 ```
 
 ## Community
