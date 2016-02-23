@@ -9,25 +9,27 @@ uri_parser
 
 ## Installation
 
-### Homebrew 
+### OS X
+
 ```bash
-$ brew tap zewo/tap
-$ brew install uri_parser
+brew tap zewo/tap
+brew install uri_parser
 ```
 
-### Ubuntu/Debian
+### Linux
+
 ```bash
-$ git clone https://github.com/Zewo/uri_parser.git && cd uri_parser
-$ make
-$ make package
-$ dpkg -i uri_parser.deb
+echo "deb [trusted=yes] http://apt.zewo.io/deb ./" | sudo tee --append /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install uri-parser
 ```
 
 ### Source
+
 ```bash
-$ git clone https://github.com/Zewo/uri_parser.git && cd uri_parser
-$ make
-$ (sudo) make install
+git clone https://github.com/Zewo/uri_parser.git && cd uri_parser
+make
+sudo make install
 ```
 
 ## Community
