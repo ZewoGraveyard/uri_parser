@@ -5,7 +5,7 @@ uri_parser
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://tldrlegal.com/license/mit-license)
 [![Slack Status](https://zewo-slackin.herokuapp.com/badge.svg)](https://zewo-slackin.herokuapp.com)
 
-**uri_parser** is an URI parser.
+**uri_parser** is an URI parser. It is a modularized excerpt of [node.js's http-parser](https://github.com/nodejs/http-parser) source.
 
 ## Installation
 
