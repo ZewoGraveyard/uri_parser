@@ -90,6 +90,7 @@ int http_parser_parse_url(const char *buf, size_t buflen,
                           struct http_parser_url *u);
 
 struct parsed_uri {
+  const uint8_t error;
   const uint16_t field_set;
   const uint16_t scheme_start;
   const uint16_t scheme_end;

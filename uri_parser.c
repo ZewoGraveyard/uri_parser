@@ -584,9 +584,16 @@ http_parser_parse_url(const char *buf, size_t buflen, int is_connect,
 struct parsed_uri parse_uri(const char *uri_string) {
     struct http_parser_url u;
     http_parser_url_init(&u);
-    http_parser_parse_url(uri_string, strlen(uri_string), 0, &u);
+
+    int rc = http_parser_parse_url(uri_string, strlen(uri_string), 0, &u);
+
+    if (rc) {
+        struct parsed_uri uri = {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+        return uri;
+    }
 
     struct parsed_uri uri = {
+        0,
         u.field_set,
         u.field_data[0].off,
         u.field_data[0].off + u.field_data[0].len,
